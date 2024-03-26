@@ -11,9 +11,7 @@ from sklearn.svm import LinearSVC
 from sklearn.metrics import accuracy_score, classification_report
 
 # Load the dataset and test the models
-df1 = pd.read_csv(r'C:\Users\Harsh Sharma\Desktop\miniproject\SPAM text message 20170820 - Data.csv')
-df2=pd.read_csv(r'C:\Users\Harsh Sharma\Desktop\miniproject\phishing_site_urls.csv')
-df=pd.concat([df1,df2])
+df = pd.read_csv(r'C:\Users\Harsh Sharma\Desktop\miniproject\SPAM text message 20170820 - Data.csv')
 fig = px.histogram(df, x="Category", color="Category", color_discrete_sequence=["#871fff","#ffa78c"])
 fig.show()
 a=df['Message']
